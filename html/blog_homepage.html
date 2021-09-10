@@ -1,66 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>瘋癲之花</title>
     <style>
-        *{
+        * {
             padding: 0px;
             margin: 0px;
         }
-        .page1{
+
+        body {
+            background-color: #5F9EA0;
+        }
+
+        .basic {
+            background-color: #fff;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .page1 {
             background-color: cadetblue;
+        }
+
+        .page1 .box {
+            display: flex;
+            width: 1080px;
+            margin: 0 auto;
+        }
+
+        .page1 .link {
+            width: 50%;
+            margin: auto 0 auto auto;
             display: flex;
         }
-        .page1 > div{
+
+        /*   .page1 div {
             padding: 10px;
         }
-        .page1 > h1{
-            padding: 20px 0;
-            margin-left: 7.5%;
+*/
+        .page1 h1 {
+            padding: 10px 0;
+            margin-left: 0.5em;
 
         }
-        .page1 > a{
+
+        .page1 a {
             margin: auto;
-            flex: content;
             text-decoration-line: none;
             color: #000000;
             font-size: 18px;
+            font-weight: bold;
             transition: 500ms;
         }
-        .page1 >a:hover{
+
+        .page1 a:hover {
             font-size: 24px;
-            background-color: #7FFF00;
         }
 
-        .page2 > .box{
-            height: 100px;
-            width: 100px;
+        .page2 {
+            margin: 50px auto;
+            width: 1080px;
+            display: flex;
         }
-        .page2 > img{
-            max-height: 100%;
+
+        .page2 .box {
+            padding: 1em;
+            width: 540px;
+        }
+
+        .page2 .post {
+            margin: auto 0;
+            padding: 1em 1em 1em 4em;
+            width: 540px;
+        }
+
+        .page2 .post h1 {
+            font-size: 60px;
+        }
+
+        .page2 .post p {
+            margin-top: 10%;
+            line-height: 2em;
+            font-size: 24px;
             max-width: 100%;
-            object-fit: contain;
         }
+        
 
+        .end {
+            background-color: #5F9EA0;
+        }
     </style>
 </head>
-<body>
-    <div class="page1">
-        <h1 class="page1">hello<br>world</h1>
-        <a href="http://127.0.0.1:5500/html/blog_page2.html">to Page2</a>
-    </div>
 
-    <div class="page2">
-        <div class="box">
-            <img src="https://picsum.photos/500/250" alt="">
+<body>
+    <div class="basic">
+        <div class="page1">
+            <div class="box">
+                <h1 class="page1">hello<br>world</h1>
+                <div class="link">
+                    <a href="http://127.0.0.1:5500/html/blog_page2.html">to Page2</a>
+                    <a href="">to Page3</a>
+                    <a href="">to Page4</a>
+                    <a href="">to Page5</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="page2">
+            <div class="box">
+                <img src='http://127.0.0.1:5500/img/IMG_20201003_164545_058.jpg'" alt=" loremkjhbvuyib,hjvyku,h jbk">
+            </div>
+            <div class="post">
+                <h1>瘋癲之花</h1>
+                <p>奇妙的作品<br>奇妙的契機<br>在一個指定的時間地點<br>期許某人得以解脫</p>
+            </div>
+        </div>
+
+        <div class="page2">
+            <div class="post">
+                <h1>瘋癲之花</h1>
+                <p>奇妙的作品<br>奇妙的契機<br>在一個指定的時間地點<br>期許某人得以解脫</p>
+            </div>
+            <div class="box">
+                <img src='http://127.0.0.1:5500/img/IMG_20201003_164545_058.jpg'" alt=" loremkjhbvuyib,hjvyku,h jbk">
+            </div>
+        </div>
+
+        <div class="page3">
+            <img src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1" alt="">
+        </div>
+
+        <div class="end">
+            <h1>it is end</h1>
         </div>
     </div>
-    <div class="post">
-        <h1>瘋癲之花</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum impedit itaque necessitatibus animi eaque rerum quam quia eius reprehenderit magni placeat, natus omnis est commodi magnam inventore in, perspiciatis consequuntur!</p>
-    </div>
+
+
 </body>
+
 </html>
