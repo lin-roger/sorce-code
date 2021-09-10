@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>瘋癲之花</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .page1{
+            background-color: cadetblue;
+            display: flex;
+        }
+        .page1 > div{
+            padding: 10px;
+        }
+        .page1 > h1{
+            padding: 20px 0;
+            margin-left: 7.5%;
+
+        }
+        .page1 > a{
+            margin: auto;
+            flex: content;
+            text-decoration-line: none;
+            color: #000000;
+            font-size: 18px;
+            transition: 500ms;
+        }
+        .page1 >a:hover{
+            font-size: 24px;
+            background-color: #7FFF00;
+        }
+
+        .page2 > .box{
+            height: 100px;
+            width: 100px;
+        }
+        .page2 > img{
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="page1">
+        <h1 class="page1">hello<br>world</h1>
+        <a href="http://127.0.0.1:5500/html/blog_page2.html">to Page2</a>
+    </div>
+
+    <div class="page2">
+        <div class="box">
+            <img src="https://picsum.photos/500/250" alt="">
+        </div>
+    </div>
+    <div class="post">
+        <h1>瘋癲之花</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum impedit itaque necessitatibus animi eaque rerum quam quia eius reprehenderit magni placeat, natus omnis est commodi magnam inventore in, perspiciatis consequuntur!</p>
+    </div>
+</body>
+</html>
