@@ -7,13 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>瘋癲之花</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+    </style>
+    <style>
         * {
-            padding: 0px;
-            margin: 0px;
-        }
-
-        body {
-            background-color: #5F9EA0;
+            padding: 0;
+            margin: 0;
         }
 
         .basic {
@@ -26,6 +25,8 @@
 
         .page1 {
             background-color: cadetblue;
+            max-width: 100%;
+            font-family: Times New Roman;
         }
 
         .page1 .box {
@@ -35,7 +36,7 @@
         }
 
         .page1 .link {
-            width: 50%;
+            width: 65%;
             margin: auto 0 auto auto;
             display: flex;
         }
@@ -64,9 +65,11 @@
         }
 
         .page2 {
+            font-family: 'Noto Sans TC';
             margin: 50px auto;
             width: 1080px;
             display: flex;
+            max-width: 100%;
         }
 
         .page2 .box {
@@ -82,18 +85,96 @@
 
         .page2 .post h1 {
             font-size: 60px;
+            font-weight: 400;
         }
 
         .page2 .post p {
             margin-top: 10%;
             line-height: 2em;
             font-size: 24px;
+            font-weight: 300;
             max-width: 100%;
         }
-        
+
 
         .end {
             background-color: #5F9EA0;
+        }
+
+        /*RWD*/
+        @media (max-width: 1080px) {
+            .page1 .box {
+                max-width: 540px;
+            }
+
+            .page2 {
+                max-width: 540px;
+
+            }
+
+            .page2 .box {
+                width: 240px;
+            }
+
+            .page2 .post {
+                width: 240px;
+                padding: 1em 1em 1em 2em;
+            }
+
+            .page2 .post h1 {
+                font-size: 45px;
+            }
+
+            .page2 .post p {
+                margin-top: 10%;
+                line-height: 2em;
+                font-size: 18px;
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 540px) {
+
+            .page1 .box {
+                max-width: 85%;
+            }
+
+            .page1 h1 {
+                font-size: 24px;
+            }
+
+            .page1 .link a {
+                font-size: 14px;
+            }
+
+            .page2 {
+                margin: 10% auto;
+                max-width: 80%;
+                display: block;
+            }
+
+            .page2 .box {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+
+            .page2 .post {
+                width: 100%;
+                padding: 0;
+                margin: 5% 0;
+            }
+
+            .page2 .post h1 {
+                font-size: 30px;
+            }
+
+            .page2 .post p {
+                margin-top: 2.5%;
+                line-height: 1.65em;
+                font-size: 18px;
+                max-width: 100%;
+            }
         }
     </style>
 </head>
@@ -120,16 +201,6 @@
             <div class="post">
                 <h1>瘋癲之花</h1>
                 <p>奇妙的作品<br>奇妙的契機<br>在一個指定的時間地點<br>期許某人得以解脫</p>
-            </div>
-        </div>
-
-        <div class="page2">
-            <div class="post">
-                <h1>瘋癲之花</h1>
-                <p>奇妙的作品<br>奇妙的契機<br>在一個指定的時間地點<br>期許某人得以解脫</p>
-            </div>
-            <div class="box">
-                <img src='http://127.0.0.1:5500/img/IMG_20201003_164545_058.jpg'" alt=" loremkjhbvuyib,hjvyku,h jbk">
             </div>
         </div>
 
