@@ -41,10 +41,6 @@
             display: flex;
         }
 
-        /*   .page1 div {
-            padding: 10px;
-        }
-*/
         .page1 h1 {
             padding: 10px 0;
             margin-left: 0.5em;
@@ -65,6 +61,7 @@
         }
 
         .page2 {
+            background-color: #fff;
             font-family: 'Noto Sans TC';
             margin: 50px auto;
             width: 1080px;
@@ -101,6 +98,26 @@
             background-color: #5F9EA0;
         }
 
+        .end .box {
+            margin: auto;
+            padding: 50px 0;
+            width: 1080px;
+            display: flex;
+        }
+
+        .end a {
+            margin: auto 5% auto auto;
+            text-decoration-line: none;
+            color: #000000;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 500ms;
+        }
+
+        .end a:hover {
+            font-size: 24px;
+        }
+
         /*RWD*/
         @media (max-width: 1080px) {
             .page1 .box {
@@ -131,12 +148,16 @@
                 font-size: 18px;
                 max-width: 100%;
             }
+
+            .end .box {
+                max-width: 540px;
+            }
         }
 
         @media (max-width: 540px) {
 
             .page1 .box {
-                max-width: 85%;
+                max-width: 90%;
             }
 
             .page1 h1 {
@@ -145,6 +166,7 @@
 
             .page1 .link a {
                 font-size: 14px;
+                padding: 0 5px;
             }
 
             .page2 {
@@ -175,6 +197,58 @@
                 font-size: 18px;
                 max-width: 100%;
             }
+
+            .end .box {
+                max-width: 90%;
+            }
+        }
+
+        @media (max-width: 340px) {
+            .page1 .box {
+                max-width: 95%;
+            }
+
+            .page1 h1 {
+                font-size: 20px;
+            }
+
+            .page1 .link a {
+                font-size: 12px;
+                padding: 0 5px;
+            }
+
+            .page2 {
+                margin: 10% auto;
+                max-width: 80%;
+                display: block;
+            }
+
+            .page2 .box {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+
+            .page2 .post {
+                width: 100%;
+                padding: 0;
+                margin: 5% 0;
+            }
+
+            .page2 .post h1 {
+                font-size: 30px;
+            }
+
+            .page2 .post p {
+                margin-top: 2.5%;
+                line-height: 1.65em;
+                font-size: 18px;
+                max-width: 100%;
+            }
+
+            .end .box {
+                max-width: 90%;
+            }
         }
     </style>
 </head>
@@ -183,7 +257,7 @@
     <div class="basic">
         <div class="page1">
             <div class="box">
-                <h1 class="page1">hello<br>world</h1>
+                <h1 class="page1" id="top">hello<br>world</h1>
                 <div class="link">
                     <a href="http://127.0.0.1:5500/html/blog_page2.html">to Page2</a>
                     <a href="">to Page3</a>
@@ -204,12 +278,41 @@
             </div>
         </div>
 
-        <div class="page3">
-            <img src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1" alt="">
+        <div class="page2">
+            <div class="box">
+                <img src='http://127.0.0.1:5500/img/IMG_20201003_164545_058.jpg'" alt=" loremkjhbvuyib,hjvyku,h jbk">
+            </div>
+            <div class="post">
+                <h1>瘋癲之花</h1>
+                <p>奇妙的作品<br>奇妙的契機<br>在一個指定的時間地點<br>期許某人得以解脫</p>
+            </div>
+        </div>
+
+        <div class="page2">
+            <div class="box">
+                <img src='http://127.0.0.1:5500/img/IMG_20201003_164545_058.jpg'" alt=" loremkjhbvuyib,hjvyku,h jbk">
+            </div>
+            <div class="post">
+                <h1>瘋癲之花</h1>
+                <p>奇妙的作品<br>奇妙的契機<br>在一個指定的時間地點<br>期許某人得以解脫</p>
+            </div>
+        </div>
+
+        <div class="page2">
+            <div class="box">
+                <img src='http://127.0.0.1:5500/img/IMG_20201003_164545_058.jpg'" alt=" loremkjhbvuyib,hjvyku,h jbk">
+            </div>
+            <div class="post">
+                <h1>瘋癲之花</h1>
+                <p>奇妙的作品<br>奇妙的契機<br>在一個指定的時間地點<br>期許某人得以解脫</p>
+            </div>
         </div>
 
         <div class="end">
-            <h1>it is end</h1>
+            <div class="box">
+                <h1>end</h1>
+                <a href="#top">Top ↑</a>
+            </div>
         </div>
     </div>
 
