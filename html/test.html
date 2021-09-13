@@ -1,52 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>測試網頁</title>
+    <meta charset="utf-8">
+
+    <title>猜数字游戏</title>
+
     <style>
-        *{
-            margin: 0;
-            padding: 0;
+        html {
+            font-family: sans-serif;
         }
-        div{
-            background-color: #616161;
-            margin: 10px 20px 20px 10px;
+
+        body {
+            width: 50%;
+            max-width: 800px;
+            min-width: 480px;
+            margin: 0 auto;
+        }
+
+        .lastResult {
+            color: white;
+            padding: 3px;
         }
     </style>
 </head>
+
 <body>
-    <h1>hello</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quis!</p>
-    <div>
-        <div>
-            <img src="https://picsum.photos/200/300" alt="testting img">
-            <a href="">Lorem, ipsum.</a>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div>
-            <img src="https://picsum.photos/200/300" alt="testting img">
-            <a href="">Lorem, ipsum.</a>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div>
-            <img src="https://picsum.photos/200/300" alt="testting img">
-            <a href="">Lorem, ipsum.</a>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div>
-            <ul>
-                <li>Lorem, ipsum dolor.</li>
-                <li>Lorem, ipsum dolor.</li>
-                <li>Lorem, ipsum dolor.</li>
-            </ul>
-            <ol>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-            </ol>
-        </div>
+    <h1>猜数字游戏</h1>
+
+    <p>我刚才随机选定了一个100以内的自然数。看你能否在 10 次以内猜中它。每次我都会告诉你所猜的结果是高了还是低了。</p>
+
+    <div class="form">
+        <label for="guessField">请猜数: </label>
+        <input type="text" id="guessField" class="guessField">
+        <input type="submit" value="确定" class="guessSubmit">
     </div>
+
+    <div class="resultParas">
+        <p class="guesses"></p>
+        <p class="lastResult"></p>
+        <p class="lowOrHi"></p>
+    </div>
+
+    <script>
+
+      
+
+    </script>
 </body>
+
 </html>
